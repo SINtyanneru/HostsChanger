@@ -30,11 +30,12 @@
         {
             Local_Button = new Button();
             Soto_Button = new Button();
+            setting_button = new Button();
             SuspendLayout();
             // 
             // Local_Button
             // 
-            Local_Button.Location = new Point(12, 12);
+            Local_Button.Location = new Point(12, 48);
             Local_Button.Name = "Local_Button";
             Local_Button.Size = new Size(256, 256);
             Local_Button.TabIndex = 0;
@@ -44,7 +45,7 @@
             // 
             // Soto_Button
             // 
-            Soto_Button.Location = new Point(274, 12);
+            Soto_Button.Location = new Point(274, 48);
             Soto_Button.Name = "Soto_Button";
             Soto_Button.Size = new Size(256, 256);
             Soto_Button.TabIndex = 1;
@@ -52,11 +53,22 @@
             Soto_Button.UseVisualStyleBackColor = true;
             Soto_Button.Click += Soto_Button_Click;
             // 
+            // setting_button
+            // 
+            setting_button.Location = new Point(12, 12);
+            setting_button.Name = "setting_button";
+            setting_button.Size = new Size(518, 29);
+            setting_button.TabIndex = 2;
+            setting_button.Text = "設定";
+            setting_button.UseVisualStyleBackColor = true;
+            setting_button.Click += setting_button_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(547, 281);
+            ClientSize = new Size(547, 316);
+            Controls.Add(setting_button);
             Controls.Add(Soto_Button);
             Controls.Add(Local_Button);
             Name = "Form1";
@@ -69,5 +81,6 @@
 
         private Button Local_Button;
         private Button Soto_Button;
+        private Button setting_button;
     }
 }
